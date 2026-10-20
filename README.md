@@ -12,4 +12,13 @@
 - 로고 이미지 파일(현재 텍스트 워드마크)
 
 ## 미리보기
-`index.html`을 브라우저로 열거나, GitHub Pages(Settings → Pages → main 브랜치 / root)로 게시.
+`index.html`을 브라우저로 열면 바로 확인할 수 있다.
+
+## Vercel 배포
+빌드 과정이 없는 정적 사이트다. `vercel.json`에는 깔끔한 URL과 보안 헤더 설정만 들어 있다.
+
+1. https://vercel.com/new 에서 GitHub 저장소 `judyloobylee-ops/ilyang_website`를 Import
+2. Framework Preset: **Other**, Build Command·Output Directory는 비워둔 채 **Deploy**
+3. 이후 `main` 브랜치에 푸시할 때마다 자동으로 다시 배포된다
+
+CLI로 올릴 때(Node.js 필요): `npx vercel` (미리보기) → `npx vercel --prod` (운영)
